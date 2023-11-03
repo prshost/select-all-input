@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+  body{
+    font-family: tahoma;
+    direction: rtl;
+  }
+  
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+@media screen and (max-width:1400px){
+  .container {
+    max-width:1320px
+  }
+}  
+
+
+/*           start          */
+/*           start          */
+/*           start          */
+
+
+
+.content {
+  display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    padding: 6rem;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+table {
+  width: 100%;
+}
+thead {
+  width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #343434;
+    display: table-caption;
+}
+thead tr {
+  margin: 0 auto;
+  display: table;
+  width: 100%;
+}
+tbody tr {
+  display: table-row;
+  text-align: center;
+  height: 40px
+}
+tbody tr:nth-child(2n + 1) {
+  background-color: #e0f3ff;
+}
+td svg {
+  cursor: pointer;
+}
+.all-del {
+  visibility: hidden;
+  transition: .4s;
+  padding: 2rem;
+  width: 100px;
+  height: 40px;
+}
+.all-del button {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  background-color: #2da4ff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: tahoma;
+}
+.all-del.show {
+  visibility: visible;
+}
